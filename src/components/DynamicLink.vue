@@ -26,6 +26,14 @@ export default {
       type: Boolean,
       required: true,
     },
+    isUsingLink: {
+      type: Boolean,
+      default: false,
+    },
+    linkTarget: {
+      type: String,
+      default: "_self",
+    }
   },
   computed: {
     localPath() {

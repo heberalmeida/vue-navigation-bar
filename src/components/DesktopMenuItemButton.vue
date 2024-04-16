@@ -5,6 +5,8 @@
     :class="['vnb__menu-options__option__button', 'vnb-button', option.class]"
     :aria-label="option.text"
     :isLinkAction="option.isLinkAction ? true : false"
+    :isUsingLink="option.isUsingLink"
+    :linkTarget="option.target"
     @click="$emit('vnb-item-clicked', option.text)"
   >
     <template #content>

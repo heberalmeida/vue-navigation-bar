@@ -31,7 +31,7 @@
 
 <script>
 import {VueScreenSizeMixin} from 'vue-screen-size';
-import uuidV4 from './common/uuidv4';
+import uuidV4 from './common/uuidV4';
 import BrandImage from './components/BrandImage.vue';
 import CollapseButton from './components/CollapseButton.vue';
 import MenuOptions from './components/MenuOptions.vue';

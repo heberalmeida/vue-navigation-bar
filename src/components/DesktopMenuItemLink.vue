@@ -7,6 +7,8 @@
     :aria-label="option.text"
     tabindex="0"
     :isLinkAction="option.isLinkAction ? true : false"
+    :isUsingLink="option.isUsingLink"
+    :linkTarget="option.target"
     @click="$emit('vnb-item-clicked', option.text)"
   >
     <template #content>
