@@ -1,8 +1,8 @@
 <template>
-  <router-link v-if="isUsingVueRouter && path" v-bind="$attrs" :to="localPath">
+  <router-link v-if="isUsingVueRouter && path && !isUsingLink" v-bind="$attrs" :to="localPath">
     <slot name="content"></slot>
   </router-link>
-  <a v-if="!isUsingVueRouter && !isLinkAction && path" v-bind="$attrs" :href="path">
+  <a v-if="!isUsingVueRouter && !isLinkAction && path" v-bind="$attrs" :href="path" :target="linkTarget">
     <slot name="content"></slot>
   </a>
   <a v-if="isLinkAction" v-bind="$attrs" href="javascript:void(0);">

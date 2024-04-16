@@ -8,7 +8,7 @@
     tabindex="0"
     :isLinkAction="option.isLinkAction ? true : false"
     :isUsingLink="option.isUsingLink"
-    :linkTarget="option.target"
+    :linkTarget="option.linkTarget"
     @click="$emit('vnb-item-clicked', option.text)"
   >
     <template #content>
